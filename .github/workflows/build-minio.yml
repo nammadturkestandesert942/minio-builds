@@ -1,9 +1,9 @@
 name: Build MinIO Binaries
 
 on:
-  # Run every Monday at 2 AM UTC
+  # Run nightly at 2 AM UTC
   schedule:
-    - cron: '0 2 * * 1'
+    - cron: '0 2 * * *'
 
   # Allow manual trigger with optional version override
   workflow_dispatch:
@@ -194,6 +194,10 @@ jobs:
           name: MinIO ${{ needs.get-version.outputs.version_short }}
           body: |
             # MinIO Community Edition - Binary Build
+            
+            > **Automated nightly builds of MinIO Community Edition binaries and Docker images**
+            >
+            > Provided as a public service by [Lithus](https://lithus.eu/)
 
             **Version:** `${{ needs.get-version.outputs.version }}`
             **Build Date:** ${{ github.event.repository.updated_at }}
